@@ -8,6 +8,7 @@ import { Product } from "./pages/Product";
 import { NoPage } from "./pages/NoPage";
 import { HelmetProvider } from "react-helmet-async";
 import { CartContextProvider } from "./context/CartContext";
+import { Checkout } from "./pages/Checkout";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path="products" element={<Products />} />
                 <Route path="/product/:id" element={<Product />} />
+                <Route path="checkout" element={<Checkout />} />
                 <Route path={"/*"} element={<NoPage />} />
               </Route>
             </Routes>

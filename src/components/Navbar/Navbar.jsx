@@ -1,5 +1,4 @@
 import style from "./Navbar.module.scss";
-import { NavLink } from "react-router-dom";
 import { CoffeeIcon } from "../CoffeeIcon/CoffeeIcon";
 import { DropdownRegion } from "../DropdownRegion/DropdownRegion";
 
@@ -15,7 +14,7 @@ export function Navbar({action}) {
       </div>
       
       <div className={style.userStyle}>
-      <DropdownRegion />
+      <DropdownRegion /> 
         <img 
         //sending action as a prop in function 'Navbar' to MainLayout
         onClick={() => action()}
