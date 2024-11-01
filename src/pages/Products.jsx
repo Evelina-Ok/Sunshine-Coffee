@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useContext } from "react"; 
 import { NavLink } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
+import style from "../Styles/Products.module.scss"
 
 export function Products () {
     const [products, setProducts] = useState();
@@ -15,8 +16,10 @@ export function Products () {
     }, [])
     
     return (
-        <section>
-            <h1>Our picks for you</h1>
+        <>
+        <h1>Our picks for you</h1>
+        <section className={style.productsStyle}>
+            
             {products?.map((item) => {
                 return (
                     <>
@@ -32,5 +35,6 @@ export function Products () {
                 )
             })}
         </section>
-    )
+        </>
+    );
 }

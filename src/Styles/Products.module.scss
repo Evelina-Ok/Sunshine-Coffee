@@ -1,3 +1,8 @@
-body {
-    background-color: #fff;
+.productsStyle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+        width: 300px;
+    }
 }

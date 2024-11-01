@@ -1,0 +1,24 @@
+@use "../../Styles/_placeholders.scss" as *;
+@use "../../Styles/_variables.scss" as *;
+
+.cartStyle {
+    width: 50%;
+    background-color: $light;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    position: fixed;
+    
+    
+    img {
+        width: 40px;
+        margin: 2rem;
+    }
+    h1 {
+        margin: 2rem;
+    }
+}
+    .cartContentStyle {
+        margin: 2rem;
+    }
+
