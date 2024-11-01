@@ -1,0 +1,33 @@
+@use "../../Styles/_placeholders.scss" as *;
+@use "../../Styles/_variables.scss" as *;
+
+
+.headerStyle {
+    position: relative;
+
+
+    img {
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 100%;
+        margin: auto;
+        position: relative;
+    }
+
+    h1 {
+        @extend %licorice;
+        font-weight: 400;
+        color: $light;
+        text-align: center;
+        font-size: 4rem;
+        z-index: 2;
+        position: absolute;     
+        margin: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+
+
+}
+
